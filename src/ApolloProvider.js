@@ -8,7 +8,7 @@ import {
 } from "@apollo/client"
 import App from './App'
 
-const httpLink = new HttpLink({uri:'http://localhost:5000'})
+const httpLink = new HttpLink({uri:'https://shrouded-spire-92510.herokuapp.com/'})
 
 const authMiddleware = new ApolloLink((operation,forward)=>{
   operation.setContext(({headers = {}})=>({
